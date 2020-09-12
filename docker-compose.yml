@@ -1,0 +1,10 @@
+version: '2.1'
+
+services:
+  angularv10:
+    image: angularv10
+    build: .
+    ports: 
+      - 8081:80
+    environment:
+      - NODE_ENV=qa
